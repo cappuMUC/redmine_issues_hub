@@ -1,4 +1,5 @@
 require 'redmine'
+require_dependency 'override_current_menu_item'
 
 
 Redmine::Plugin.register :redmine_issues_hub do
@@ -21,18 +22,5 @@ Redmine::Plugin.register :redmine_issues_hub do
 
 end
 
-
-# Change the application menu entry for the controllers
-CalendarsController.class_eval do 
-  def current_menu_item
-	:issues
-  end
-end
-
-GanttsController.class_eval do 
-  def current_menu_item
-	:issues
-  end
-end
 
 
