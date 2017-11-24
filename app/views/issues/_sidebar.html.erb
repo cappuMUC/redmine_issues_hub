@@ -2,7 +2,7 @@
     <%= stylesheet_link_tag 'switch.css', :plugin => 'redmine_issues_sidebar' %>
 <% end %>
 
-<h3>Views</h3>
+<h3><%= l(:label_view_plural) %></h3>
 <ul>
   <% if User.current.allowed_to?(:view_issues, @project, :global => true) %>
   <li><%= link_to l(:label_issue_plural), _project_issues_path(@project) %></li>
