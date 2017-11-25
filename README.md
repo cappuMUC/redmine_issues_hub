@@ -44,7 +44,7 @@ restart.
 
 ## Contribute
 
-Issues Hub needds an additional label for the views header in the sidebar. It's
+Issues Hub needs an additional label for the views header in the sidebar. It's
 currently available in English and German. So translations into other
 languages are always welcome. Just raise an issue with your translation and I
 will integrate it, as quick as possible.
