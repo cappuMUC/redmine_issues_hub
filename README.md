@@ -18,6 +18,10 @@ helps new users to understand the purpose and capabilities of the 'Gantt' and
 
 ![Calendars view with the installed plugin](screenshots/issues_hub_calendar.png)
 
+## Compatiblility
+This plugin is compatibe to **all versions** since V0.8.  
+There should be no problems with other plugins.
+
 ## Settings
 After installing the plugin, the menu items 'Calendar' and 'Gantt' are hidden
 from the top menu and only accessible via the 'Issues' item. For that reason
