@@ -8,10 +8,10 @@
   <li><%= link_to l(:label_issue_plural), _project_issues_path(@project) %></li>
   <% end %>
   <% if User.current.allowed_to?(:view_calendar, @project, :global => true) %>
-  <li><%= link_to l(:label_calendar), {:controller => 'calendars', :action => 'show'} %></li>
+  <li><%= link_to l(:label_calendar), _project_calendar_path(@project) %></li>
   <% end %>
   <% if User.current.allowed_to?(:view_gantt, @project, :global => true) %>
-  <li><%= link_to l(:label_gantt), {:controller => 'gantts', :action => 'show'} %></li>
+  <li><%= link_to l(:label_gantt), _project_gantt_path(@project) %></li>
   <% end %>
 </ul>
 
