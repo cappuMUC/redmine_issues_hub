@@ -7,7 +7,7 @@ Redmine::Plugin.register :redmine_issues_hub do
   author 'Bernhard Rohloff'
   description 'This plugin collects Issues, Gantt and Calendar into a single tab'
   url 'https://github.com/cappumuc/redmine_issues_hub'
-  version '0.0.1'
+  version '0.0.2'
 
 
 
