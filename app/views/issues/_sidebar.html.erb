@@ -1,10 +1,10 @@
 <% content_for :header_tags do %>
-    <%= stylesheet_link_tag 'switch.css', :plugin => 'redmine_issues_sidebar' %>
+    <%= stylesheet_link_tag 'styles.css', :plugin => 'redmine_issues_hub' %>
 <% end %>
 <% if User.current.allowed_to?(:view_calendar, @project, :global => true) or
 	User.current.allowed_to?(:view_gantt, @project, :global => true )%>
   <h3><%= l(:label_view_plural) %></h3>
-  <ul>
+  <ul id="issues-views">
 	<% if User.current.allowed_to?(:view_issues, @project, :global => true) %>
 	  <li><%= link_to l(:label_issue_plural), _project_issues_path(@project) %></li>
 	<% end %>

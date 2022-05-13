@@ -1,0 +1,63 @@
+/* reset margin and padding inside #issues-views */
+#sidebar #issues-views * {
+  margin: 0;
+  padding: 0;
+}
+
+#issues-views {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+#issues-views li {
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  margin: 0;
+}
+
+#issues-views li:first-child {
+  border-radius: 4px 0px 0px 4px;
+}
+
+#issues-views li:last-child {
+  border-radius: 0px 4px 4px 0px;
+}
+
+#issues-views li a {
+  height: 100%;
+  width: 100%;
+  padding: 5px !important;
+  display: block;
+  text-decoration: none;
+  color: #555;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+#issues-views li:nth-child(2) {
+  border-width: 1px 0px 1px 0px;
+}
+.controller-issues #issues-views li:nth-child(1) {
+  background: #555;
+}
+
+.controller-issues #issues-views li:nth-child(1) a {
+  color: #fff;
+}
+
+.controller-calendars #issues-views li:nth-child(2) {
+  background: #555;
+}
+
+.controller-calendars #issues-views li:nth-child(2) a {
+  color: #fff;
+}
+
+.controller-gantts #issues-views li:nth-child(3) {
+  background: #555;
+}
+
+.controller-gantts #issues-views li:nth-child(3) a {
+  color: #fff;
+}
