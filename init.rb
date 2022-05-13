@@ -1,7 +1,3 @@
-require 'redmine'
-require_dependency 'override_current_menu_item'
-
-
 Redmine::Plugin.register :redmine_issues_hub do
   name 'Redmine Issues Hub'
   author 'Bernhard Rohloff'
@@ -19,6 +15,17 @@ Redmine::Plugin.register :redmine_issues_hub do
   delete_menu_item :application_menu, :calendar
   delete_menu_item :application_menu, :gantt
 
+  Rails.application.config.after_initialize do
+    # Guards against including the module multiple time (like in tests)
+    # and registering multiple callbacks
+    unless CalendarsController.included_modules.include? CalendarsControllerPatch
+      CalendarsController.send(:include, CalendarsControllerPatch)
+    end
+
+    unless GanttsController.included_modules.include? GanttsControllerPatch
+      GanttsController.send(:include, GanttsControllerPatch)
+    end
+  end
 
 end
 
