@@ -38,26 +38,26 @@
 #issues-views li:nth-child(2) {
   border-width: 1px 0px 1px 0px;
 }
-.controller-issues #issues-views li:nth-child(1) {
+.controller-issues #btn-issues-view {
   background: #555;
 }
 
-.controller-issues #issues-views li:nth-child(1) a {
+.controller-issues #btn-issues-view a {
   color: #fff;
 }
 
-.controller-calendars #issues-views li:nth-child(2) {
+.controller-calendars #btn-calendar-view {
   background: #555;
 }
 
-.controller-calendars #issues-views li:nth-child(2) a {
+.controller-calendars #btn-calendar-view a {
   color: #fff;
 }
 
-.controller-gantts #issues-views li:nth-child(3) {
+.controller-gantts #btn-gantt-view {
   background: #555;
 }
 
-.controller-gantts #issues-views li:nth-child(3) a {
+.controller-gantts #btn-gantt-view a {
   color: #fff;
 }

@@ -6,13 +6,13 @@
   <h3><%= l(:label_view_plural) %></h3>
   <ul id="issues-views">
 	<% if User.current.allowed_to?(:view_issues, @project, :global => true) %>
-	  <li><%= link_to l(:label_issue_plural), _project_issues_path(@project) %></li>
+	  <li id="btn-issues-view"><%= link_to l(:label_issue_plural), _project_issues_path(@project) %></li>
 	<% end %>
 	<% if User.current.allowed_to?(:view_calendar, @project, :global => true) %>
-	  <li><%= link_to l(:label_calendar), _project_calendar_path(@project) %></li>
+	  <li id="btn-calendar-view"><%= link_to l(:label_calendar), _project_calendar_path(@project) %></li>
 	<% end %>
 	<% if User.current.allowed_to?(:view_gantt, @project, :global => true) %>
-	  <li><%= link_to l(:label_gantt), _project_gantt_path(@project) %></li>
+	  <li id="btn-gantt-view"><%= link_to l(:label_gantt), _project_gantt_path(@project) %></li>
 	<% end %>
   </ul>
 <% end %>
